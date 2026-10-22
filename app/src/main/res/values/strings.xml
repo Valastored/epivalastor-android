@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EpiValastor</string>
+    <string name="widget_description">Prochain cours, salle et compte à rebours</string>
+    <string name="shortcut_today_short">Aujourd\'hui</string>
+    <string name="shortcut_today_long">Aller à aujourd\'hui</string>
+    <string name="shortcut_search_short">Rechercher</string>
+    <string name="shortcut_search_long">Rechercher un cours</string>
+    <string name="shortcut_sync_short">Synchroniser</string>
+    <string name="shortcut_sync_long">Synchroniser le planning</string>
+    <string name="shortcut_stats_short">Statistiques</string>
+    <string name="shortcut_stats_long">Voir les statistiques</string>
+</resources>
