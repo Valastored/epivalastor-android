@@ -80,6 +80,22 @@ git clone https://github.com/Valastored/epivalastor-android.git
 Ouvre le dossier dans Android Studio, laisse Gradle se synchroniser, puis ▶ (Run).
 Pour un APK : **Build › Generate Signed App Bundle / APK › APK** (avec ta propre clé de signature).
 
+### Organisation du code (`app/src/main/java/com/example/epivalastor/`)
+
+| Fichier | Rôle |
+|---|---|
+| `IcsManager.kt` | Téléchargement et lecture des fichiers ICS (fuseaux, récurrences) |
+| `ScheduleRepository.kt`, `SyncManager.kt` | Synchro (manuelle, au lancement, quotidienne avec WorkManager) |
+| `ChangeDetector.kt` | Détection des cours ajoutés, annulés ou déplacés |
+| `AppDatabase.kt`, `*Dao.kt`, `*Entity.kt` | Base de données Room (cours, agendas, changements) |
+| `CourseNotifier.kt` | Notifications (cours en cours, Live Update, rappels, examens, changements) |
+| `NextCourseWidget.kt` | Widget « prochain cours » redimensionnable |
+| `MainActivity.kt`, `ScheduleViews.kt` | Écran principal, vues semaine / jour, cartes de cours |
+| `SettingsScreen.kt`, `AppSettings.kt` | Réglages en plusieurs pages |
+| `SearchScreen.kt`, `StatsScreen.kt`, `MiniCalendar.kt`, `Dialogs.kt` | Recherche, statistiques, mini-calendrier, détails / changements |
+| `PlanningShare.kt` | Image d'un jour ou d'une semaine (partage / galerie) |
+| `CourseUtils.kt` | Détection examens / fériés, recherche, formats |
+
 ---
 
 <p align="center">Développé par <b>Valastor</b></p>
