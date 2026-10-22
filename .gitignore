@@ -1,0 +1,18 @@
+# Gradle / Android Studio
+.gradle/
+build/
+app/build/
+app/release/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+.idea/
+*.iml
+# Clés de signature : ne jamais les publier
+*.jks
+*.keystore
+keystore.properties
+# Divers
+.DS_Store
+*.tgz
